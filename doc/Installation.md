@@ -1,14 +1,16 @@
-sudo apt install inspircd
+### MailTrain
 
-sudo ufw allow 22/tcp
-sudo ufw allow 6667/tcp
-sudo ufw reload
+https://unixcop.com/how-to-install-mailtrain-app-on-ubuntu-debian/
 
-panneau porkbum
+## Téléchargez et installez l'application Mailtrain
 
-CNAME irc.shiftsphere.xyz
+- apt-get installer décompresser
+- wget https://github.com/Mailtrain-org/mailtrain/archive/master.zip
+- décompresser master.zip
+- mv mailtrain-1 mailtrain
 
-sudo chmod +x /etc/inspircd
 
-sudo cp inspircd.conf inspircd.conf.copie
-sudo jed inspircd.conf
+## Exécutez la commande suivante pour démarrer le serveur :
+
+- cd /var/www/newsletter.shiftsphere.xyz
+- NODE_ENV=production npm start
